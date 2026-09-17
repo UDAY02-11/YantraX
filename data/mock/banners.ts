@@ -1,0 +1,78 @@
+import type { HeroBanner, OfferBanner } from '@/types/product';
+
+export const mockHeroBanners: HeroBanner[] = [
+  {
+    id: 'h1',
+    title: 'Build Something Amazing',
+    subtitle: 'Robotics & Electronics',
+    description: 'Explore robotics kits, development boards, sensors and smart hardware for your next project.',
+    ctaText: 'Shop Now',
+    ctaHref: '/shop',
+    image: 'https://images.pexels.com/photos/7869034/pexels-photo-7869034.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600',
+    variant: 'primary',
+    badge: 'New Season Collection',
+  },
+  {
+    id: 'h2',
+    title: 'Big Deals. Bigger Builds.',
+    subtitle: 'Flash Sale Weekend',
+    description: 'Up to 40% off on development boards, sensors and motors. Limited time only.',
+    ctaText: 'Grab the Deals',
+    ctaHref: '/deals',
+    image: 'https://images.pexels.com/photos/11579194/pexels-photo-11579194.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600',
+    variant: 'flash',
+    badge: 'Up to 40% Off',
+  },
+  {
+    id: 'h3',
+    title: 'Upgrade Your Lab',
+    subtitle: 'Pro Grade Equipment',
+    description: 'Raspberry Pi 5, AI vision kits, 3D printers and lab instruments for serious makers.',
+    ctaText: 'Explore Now',
+    ctaHref: '/shop?sort=featured',
+    image: 'https://images.pexels.com/photos/20341728/pexels-photo-20341728.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600',
+    variant: 'offer',
+    badge: 'Pro Series',
+  },
+  {
+    id: 'h4',
+    title: 'Learn. Build. Create.',
+    subtitle: 'STEM Education',
+    description: 'Hands-on kits and tutorials designed to inspire the next generation of innovators.',
+    ctaText: 'Start Learning',
+    ctaHref: '/learn',
+    image: 'https://images.pexels.com/photos/7868836/pexels-photo-7868836.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600',
+    variant: 'learn',
+    badge: 'For Educators & Students',
+  },
+];
+
+export const mockOfferBanners: OfferBanner[] = [
+  {
+    id: 'o1',
+    title: 'Weekend Sale',
+    description: 'Up to 40% off on select robotics kits and development boards.',
+    ctaText: 'Shop Deals',
+    ctaHref: '/deals',
+    image: 'https://images.pexels.com/photos/35652401/pexels-photo-35652401.jpeg?auto=compress&cs=tinysrgb&h=500&w=800',
+    accent: 'deal',
+  },
+  {
+    id: 'o2',
+    title: 'Build Your First Robot',
+    description: 'Starter kits from ₹999. Everything you need in one box.',
+    ctaText: 'View Kits',
+    ctaHref: '/shop/stem',
+    image: 'https://images.pexels.com/photos/7868890/pexels-photo-7868890.jpeg?auto=compress&cs=tinysrgb&h=500&w=800',
+    accent: 'learn',
+  },
+  {
+    id: 'o3',
+    title: 'Free Shipping',
+    description: 'On all eligible orders above ₹499 across India.',
+    ctaText: 'Learn More',
+    ctaHref: '/shipping',
+    image: 'https://images.pexels.com/photos/30170004/pexels-photo-30170004.jpeg?auto=compress&cs=tinysrgb&h=500&w=800',
+    accent: 'offer',
+  },
+];

@@ -1,0 +1,65 @@
+import type { Project } from '@/types/product';
+
+export const mockProjects: Project[] = [
+  {
+    id: 'pr1',
+    title: 'Build a Bluetooth Robot Car',
+    slug: 'bluetooth-robot-car',
+    image: 'https://images.pexels.com/photos/7869034/pexels-photo-7869034.jpeg?auto=compress&cs=tinysrgb&h=400&w=600',
+    difficulty: 'Beginner',
+    description: 'Build a smartphone-controlled robot car using Arduino and a Bluetooth module. Learn motor control and wireless communication.',
+    category: 'Robotics',
+    components: [
+      { name: 'Arduino Uno', slug: 'arduino-uno-r4-wifi' },
+      { name: 'L298N Motor Driver', slug: 'l298n-motor-driver' },
+      { name: 'HC-05 Bluetooth', slug: 'hc-05-bluetooth' },
+      { name: 'DC Motors (2x)', slug: 'geared-dc-motor-12v' },
+    ],
+    estimatedTime: '2-3 hours',
+  },
+  {
+    id: 'pr2',
+    title: 'IoT Weather Station',
+    slug: 'iot-weather-station',
+    image: 'https://images.pexels.com/photos/18721086/pexels-photo-18721086.jpeg?auto=compress&cs=tinysrgb&h=400&w=600',
+    difficulty: 'Intermediate',
+    description: 'Create a WiFi-connected weather station that logs temperature, humidity and pressure to the cloud using ESP32.',
+    category: 'IoT',
+    components: [
+      { name: 'ESP32 DevKit', slug: 'esp32-wroom-devkit-v1' },
+      { name: 'BMP280 Sensor', slug: 'bmp280-pressure-sensor' },
+      { name: 'DHT22 Sensor', slug: 'dht22-sensor' },
+    ],
+    estimatedTime: '4-5 hours',
+  },
+  {
+    id: 'pr3',
+    title: 'Smart Home Automation',
+    slug: 'smart-home-automation',
+    image: 'https://images.pexels.com/photos/30170004/pexels-photo-30170004.jpeg?auto=compress&cs=tinysrgb&h=400&w=600',
+    difficulty: 'Intermediate',
+    description: 'Control lights and appliances from your phone. Build a relay-based home automation system with app control.',
+    category: 'IoT',
+    components: [
+      { name: 'NodeMCU ESP8266', slug: 'nodemcu-esp8266-v3' },
+      { name: 'Relay Module (4ch)', slug: 'relay-module-4ch' },
+      { name: 'Smart Home Kit', slug: 'smart-home-iot-starter-kit' },
+    ],
+    estimatedTime: '3-4 hours',
+  },
+  {
+    id: 'pr4',
+    title: 'AI Object Detection Robot',
+    slug: 'ai-object-detection-robot',
+    image: 'https://images.pexels.com/photos/17483849/pexels-photo-17483849.png?auto=compress&cs=tinysrgb&h=400&w=600',
+    difficulty: 'Advanced',
+    description: 'Build an edge AI robot that recognizes and tracks objects in real-time using the K210 vision module.',
+    category: 'AI & ML',
+    components: [
+      { name: 'AI Vision Kit (K210)', slug: 'ai-vision-kit-k210' },
+      { name: 'Servo Motor', slug: 'mg90s-micro-servo' },
+      { name: 'Ultrasonic Sensor', slug: 'hc-sr04-ultrasonic-sensor' },
+    ],
+    estimatedTime: '6-8 hours',
+  },
+];
